@@ -36,9 +36,9 @@ const Color = {
 	rgb: function(r, g, b) {
 		function toHex(c) {
 			var hex = c.toString(16);
-			return hex.length == 1 ? "0" + hex : hex;
+			return hex.length == 1?"0"+hex:hex;
 		}
-		
+		return "0x"+toHex(r)+toHex(g)+toHex(b);
 	}
 }
 //Functions
